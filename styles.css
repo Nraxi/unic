@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+
+}
+
+.row {
+  display: flex;
+  width: 51%;
+}
+
+.div {
+  flex: 1 1 50%;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+
+
+}
+
+.div1 {
+  background-color: red;
+  width: 100%;
+}
+
+.div2 {
+  background-color: blue;
+  width: 100%;
+}
+
+.div3 {
+  background-color: green;
+  width: 100%;
+}
+
+.div4 {
+  background-color: orange;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+
+
+/* EXEMPEL 2 */
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Två kolumner */
+  grid-template-rows: auto auto auto;
+  /* Automatisk höjd för rader */
+  gap: 5px;
+  /* Avstånd mellan divarna */
+  background-color: aqua;
+  /* Bredden på behållaren */
+}
+
+.divs {
+  height: 100px;
+  /* Höjden på dina divs, justera efter behov */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divs1 {
+  background-color: red;
+  grid-column: 1 / 2;
+  /* Div 1 börjar på kolumn 1 och slutar på kolumn 2 */
+}
+
+.divs2 {
+  background-color: blue;
+  grid-column: 2 / 3;
+  /* Div 2 börjar på kolumn 2 och slutar på kolumn 3 */
+}
+
+.divs3 {
+  background-color: green;
+  grid-row: 2 / 3;
+  /* Div 3 börjar på rad 2 och slutar på rad 3 */
+  grid-column: 1 / 2;
+  /* Div 3 börjar på kolumn 1 och slutar på kolumn 2 */
+}
+
+.divs4 {
+  background-color: orange;
+  grid-row: 3 / 3;
+  /* Div 4 börjar på rad 2 och slutar på rad 3 */
+  grid-column: 1 / 2;
+  /* Div 4 börjar på kolumn 2 och slutar på kolumn 3 */
+}
